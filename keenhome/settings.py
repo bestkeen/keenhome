@@ -24,8 +24,9 @@ SECRET_KEY = '-l)g9u#e^zqoqm=td^tvjv5^^&s(%&k7=optoqe6ur*l(5e2ek'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','keenhome.cn']
 
 
 # Application definition
@@ -122,3 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    "/home/keen/keenhome/main/static/"
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")

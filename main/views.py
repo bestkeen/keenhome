@@ -12,5 +12,4 @@ def accounts_profile(request):
 		b = User.objects.get(email = request.user.email)
 		b.name = a['name']
 		b.save()
-		
 	return render(request,'accounts_profile.html')
