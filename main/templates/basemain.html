@@ -32,8 +32,8 @@
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">定制工具</a></li>
-					<li><a href="#">?</a></li>
-					<li><a href="#">?</a></li>
+					<li><a href="#">备用</a></li>
+					<li><a href="/stock/">备用</a></li>
 					<li class="divider"></li>
 					<li><a href="/accounts/profile/">修改个人信息</a></li>
 					<li class="divider"></li>
@@ -50,19 +50,18 @@
     </nav>
 
 <div class="container container-center jumbotron">
-	<div class="col-md-8 col-sm-offset-4">
 		{% block content %}
+	<div class="col-md-8 col-sm-offset-4">
 		<div id="app" class="form-group">
 			<p class="form-control" v-text="aaa"></p>
 			<span>Input here: </span>
 			<input class="form-control" v-model="aaa">
 		</div>
-		{% endblock %}
 	</div>
+		{% endblock %}
 </div>
 
 <div class="container text-center jumbotron">
-	<p> Power By <a href="/main">Django 1.11.8</a></p>
 	<p> Copyright 2018. Keenhome</p>
 </div>
 {% block vuejs %}

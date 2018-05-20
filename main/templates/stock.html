@@ -1,0 +1,11 @@
+{% extends 'basemain.html' %}
+{% block tile %} 股票 {% endblock %}
+
+{% block content %}
+{% ifequal data "None" %}
+    <h4>**收盘期间/暂无最新数据**</h4>
+{% else %}
+{% for x in data %}
+ 	<p>{{ x }}</p>
+{% endfor %}
+{% endifequal %}{% endblock %}
